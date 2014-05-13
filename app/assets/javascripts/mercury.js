@@ -450,3 +450,7 @@ window.Mercury = {
   debug: false
 
 };
+
+$(window).bind('mercury:saved', function() {
+  window.location = window.location.href.replace(/\/editor\//i, '/');
+});

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   mount Mercury::Engine => '/'
+  put '/', to: 'pages#save_page', id: '1'
   root to: 'pages#show', id: '1'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
